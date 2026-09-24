@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elijah Coleman | Systems & Software Engineer</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --text-muted: #8b949e;
+      --heading: #f0f6fc;
+      --accent: #58a6ff;
+      --accent-hover: #1f6feb;
+      --green: #3fb950;
+      --tag-bg: #21262d;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      color: var(--heading);
+      font-size: 2.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--accent);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .bio {
+      color: var(--text-muted);
+      max-width: 680px;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--heading);
+      background-color: var(--tag-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.2s, border-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: var(--border);
+      color: var(--accent);
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: #0d1117;
+      border-color: var(--accent);
+    }
+
+    .btn-primary:hover {
+      background-color: #79c0ff;
+      color: #0d1117;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: var(--heading);
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .card-title {
+      color: var(--heading);
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .tag {
+      background-color: var(--tag-bg);
+      color: var(--accent);
+      border: 1px solid var(--border);
+      padding: 0.15rem 0.55rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-family: monospace;
+    }
+
+    .card p {
+      color: var(--text);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .highlights {
+      list-style-type: none;
+      margin-bottom: 1.25rem;
+    }
+
+    .highlights li {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+
+    .highlights li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--green);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-category {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+    }
+
+    .skill-category h3 {
+      font-size: 0.95rem;
+      color: var(--heading);
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-list {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Elijah Coleman</h1>
+      <div class="subtitle">Software & Systems Engineer</div>
+      <p class="bio">
+        Specializing in low-level systems engineering, real-time input pipelines, hardware-software interfacing, and game technology tools.
+      </p>
+      <div class="links">
+        <a href="https://github.com/elijahC631" class="btn" target="_blank">GitHub Profile</a>
+        <a href="https://github.com/elijahC631/PS-Input-Recorder-and-Playback" class="btn" target="_blank">Controller Project Repo</a>
+        <a href="mailto:contact@elijahcoleman.dev" class="btn">Get in Touch</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Featured Engineering Projects</h2>
+
+      <!-- PROJECT 1: Input Recorder -->
+      <article class="card">
+        <div class="card-header">
+          <div class="card-title">DualShock / DualSense Input Recorder & Virtual Playback System</div>
+        </div>
+        <div class="tags">
+          <span class="tag">Python 3.12</span>
+          <span class="tag">ViGEmBus (C++ Kernel Driver)</span>
+          <span class="tag">Pygame (SDL2)</span>
+          <span class="tag">Multithreading</span>
+          <span class="tag">HID Protocol</span>
+        </div>
+        <p>
+          A high-precision controller input recording and deterministic virtual gamepad replay application engineered for input benchmarking and automated testing on Windows.
+        </p>
+        <ul class="highlights">
+          <li><strong>Real-Time Hardware Capture (~120 Hz):</strong> Polls physical PlayStation controllers via SDL2/Pygame, supporting both DualShock 4 digital buttons and DualSense POV hat switches.</li>
+          <li><strong>Protocol Normalization:</strong> Corrected non-linear trigger travel from raw ranges ([-1.0, 1.0] &rarr; [0.0, 1.0]) and translated stick coordinates to native 8-bit unsigned DualShock 4 HID distributions (0&ndash;255, center 128).</li>
+          <li><strong>Sub-Millisecond Playback Engine:</strong> Built a hybrid spin-wait / sleep loop bypassing Windows OS timer granularity (15.6 ms jitter) to eliminate cumulative drift during replay.</li>
+          <li><strong>Kernel-Level Emulation:</strong> Integrates the ViGEmBus driver to synthesize authentic DualShock 4 HID state reports directly to the operating system.</li>
+          <li><strong>Thread-Safe GUI:</strong> Decoupled capture and replay loops onto background worker threads protected by mutex locks, packaged into a standalone binary via PyInstaller.</li>
+        </ul>
+        <div class="links">
+          <a href="https://github.com/elijahC631/PS-Input-Recorder-and-Playback" class="btn btn-primary" target="_blank">View Repository</a>
+          <a href="https://github.com/elijahC631/PS-Input-Recorder-and-Playback/releases" class="btn" target="_blank">Download Executable</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 2: Arcadia Game -->
+      <article class="card">
+        <div class="card-header">
+          <div class="card-title">Arcadia — Object-Oriented Text RPG Engine</div>
+        </div>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Object-Oriented Design</span>
+          <span class="tag">State Machines</span>
+          <span class="tag">Data Structures</span>
+        </div>
+        <p>
+          A modular text-based role-playing game engine engineered to practice clean object-oriented architecture, decoupled state management, and combat mechanics.
+        </p>
+        <ul class="highlights">
+          <li><strong>Extensible Entity Hierarchy:</strong> Designed cleanly abstracted class structures for player progression, dynamic inventory, and turn-based combat systems.</li>
+          <li><strong>Robust State Architecture:</strong> Built state machine flows managing game sessions, encounter loops, and deterministic combat math.</li>
+        </ul>
+        <div class="links">
+          <a href="https://github.com/elijahC631" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-list">Python, C++, R, SQL</div>
+        </div>
+        <div class="skill-category">
+          <h3>Systems & Gaming Tech</h3>
+          <div class="skill-list">ViGEmBus, SDL2 / Pygame, HID Protocol, DirectInput/XInput, Driver Emulation</div>
+        </div>
+        <div class="skill-category">
+          <h3>Software Engineering</h3>
+          <div class="skill-list">Multithreading, Concurrency, Performance Benchmarking, Object-Oriented Design, Git/GitHub</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
