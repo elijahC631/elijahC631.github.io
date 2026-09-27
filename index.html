@@ -153,6 +153,21 @@
       margin-bottom: 1rem;
     }
 
+    /* Embedded GIF Media Frame */
+    .demo-media {
+      margin: 1.25rem 0 1.5rem 0;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background-color: #090d13;
+    }
+
+    .demo-media img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
     .highlights {
       list-style-type: none;
       margin-bottom: 1.25rem;
@@ -232,6 +247,12 @@
         <p>
           A high-precision controller input recording and deterministic virtual gamepad replay application engineered for input benchmarking and automated testing on Windows.
         </p>
+
+        <!-- Live Demo Display -->
+        <div class="demo-media">
+          <img src="demo.gif" alt="Controller input recording and live virtual replay demo" loading="lazy">
+        </div>
+
         <ul class="highlights">
           <li><strong>Real-Time Hardware Capture (~120 Hz):</strong> Polls physical PlayStation controllers via SDL2/Pygame, supporting both DualShock 4 digital buttons and DualSense POV hat switches.</li>
           <li><strong>Protocol Normalization:</strong> Corrected non-linear trigger travel from raw ranges ([-1.0, 1.0] &rarr; [0.0, 1.0]) and translated stick coordinates to native 8-bit unsigned DualShock 4 HID distributions (0&ndash;255, center 128).</li>
