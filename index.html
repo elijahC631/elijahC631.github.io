@@ -218,13 +218,14 @@
   <div class="container">
     <header>
       <h1>Elijah Coleman</h1>
-      <div class="subtitle">Software & Systems Engineer</div>
+      <div class="subtitle">Computer Science Student | Software & Systems Engineering</div>
       <p class="bio">
-        Specializing in low-level systems engineering, real-time input pipelines, hardware-software interfacing, and game technology tools.
+        Building software across systems, automation, and game technology, with interests in real time applications and hardware-software integration.
       </p>
       <div class="links">
         <a href="https://github.com/elijahC631" class="btn" target="_blank">GitHub Profile</a>
         <a href="https://github.com/elijahC631/PS-Input-Recorder-and-Playback" class="btn" target="_blank">Controller Project Repo</a>
+        <a href="resume.pdf" class="btn" target="_blank">Resume</a>
         <a href="mailto:elijahcoleman631@gmail.com" class="btn">Contact Me</a>
       </div>
     </header>
@@ -239,10 +240,11 @@
         </div>
         <div class="tags">
           <span class="tag">Python 3.12</span>
-          <span class="tag">ViGEmBus (C++ Kernel Driver)</span>
-          <span class="tag">Pygame (SDL2)</span>
+          <span class="tag">ViGEmBus</span>
+          <span class="tag">Pygame</span>
           <span class="tag">Multithreading</span>
-          <span class="tag">HID Protocol</span>
+          <span class="tag" >JSON</span>
+          <span class="tag">HID</span>
         </div>
         <p>
           A high-precision controller input recording and deterministic virtual gamepad replay application engineered for input benchmarking and automated testing on Windows.
@@ -256,8 +258,8 @@
         <ul class="highlights">
           <li><strong>Real-Time Hardware Capture (~120 Hz):</strong> Polls physical PlayStation controllers via SDL2/Pygame, supporting both DualShock 4 digital buttons and DualSense POV hat switches.</li>
           <li><strong>Protocol Normalization:</strong> Corrected non-linear trigger travel from raw ranges ([-1.0, 1.0] &rarr; [0.0, 1.0]) and translated stick coordinates to native 8-bit unsigned DualShock 4 HID distributions (0&ndash;255, center 128).</li>
-          <li><strong>Sub-Millisecond Playback Engine:</strong> Built a hybrid spin-wait / sleep loop bypassing Windows OS timer granularity (15.6 ms jitter) to eliminate cumulative drift during replay.</li>
-          <li><strong>Kernel-Level Emulation:</strong> Integrates the ViGEmBus driver to synthesize authentic DualShock 4 HID state reports directly to the operating system.</li>
+          <li><strong>High-Precision Playback:</strong> Implemented a hybrid sleep/spin-wait timing loop to reduce cumulative timing drift during recorded input playback.</li>
+          <li><strong>Virtual Controller Emulation:</strong> Integrated ViGEmBus to replay recorded inputs through an emulated DualShock 4 controller recognized by Windows.</li>
           <li><strong>Thread-Safe GUI:</strong> Decoupled capture and replay loops onto background worker threads protected by mutex locks, packaged into a standalone binary via PyInstaller.</li>
         </ul>
         <div class="links">
@@ -269,7 +271,7 @@
       <!-- PROJECT 2: Arcadia Game -->
       <article class="card">
         <div class="card-header">
-          <div class="card-title">Arcadia — Object-Oriented Text RPG Engine</div>
+          <div class="card-title">Arcadia — Object-Oriented Text RPG</div>
         </div>
         <div class="tags">
           <span class="tag">Python</span>
@@ -278,32 +280,64 @@
           <span class="tag">Data Structures</span>
         </div>
         <p>
-          A modular text-based role-playing game engine engineered to practice clean object-oriented architecture, decoupled state management, and combat mechanics.
+          A Python text-based RPG built to explore object-oriented programming through player progression, weapons, combat, and randomized gameplay systems.
         </p>
         <ul class="highlights">
-          <li><strong>Extensible Entity Hierarchy:</strong> Designed cleanly abstracted class structures for player progression, dynamic inventory, and turn-based combat systems.</li>
-          <li><strong>Robust State Architecture:</strong> Built state machine flows managing game sessions, encounter loops, and deterministic combat math.</li>
+          <li><strong>Object-Oriented Design:</strong> Built reusable classes for players, weapons, combat, and progression systems.</li>
+          <li><strong>Gameplay Systems:</strong> Implemented turn-based combat, randomized encounters, inventory mechanics, and player progression.</li>
         </ul>
         <div class="links">
           <a href="https://github.com/elijahC631" class="btn" target="_blank">View on GitHub</a>
         </div>
       </article>
     </section>
+    <section>
+      <h2>Experience</h2>
+
+      <article class="card">
+        <div class="card-header">
+          <div class="card-title">Controls Engineering Intern — Altria (Philip Morris USA)</div>
+          <span class="tag">May 2026 – Present</span>
+        </div>
+
+        <ul class="highlights">
+          <li>Developed HMI applications for PLC-controlled manufacturing systems using Magelis HMIs and Vijeo Designer, enabling real-time process monitoring, alarms, and operator controls.</li>
+          <li>Executed field validation and QA testing of manufacturing control systems by mapping instrumentation from P&IDs, troubleshooting controls, and verifying process functionality.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div class="card-title">PlayStation Career Pathways Program</div>
+          <span class="tag">December 2025 – Present</span>
+        </div>
+
+        <ul class="highlights">
+          <li>Selected for a competitive career development program featuring technical workshops, mentorship, and professional development led by PlayStation engineers and industry professionals.</li>
+          <li>Expanded knowledge of software engineering career pathways, technical interviewing strategies, industry best practices, and emerging technologies through immersive learning experiences.</li>
+        </ul>
+      </article>
+    </section>
+
 
     <section>
       <h2>Technical Skills</h2>
       <div class="skills-grid">
         <div class="skill-category">
           <h3>Languages</h3>
-          <div class="skill-list">Python, C++, R, SQL</div>
+          <div class="skill-list">Python, Java, C++, SQL, JavaScript, HTML, R</div>
         </div>
         <div class="skill-category">
-          <h3>Systems & Gaming Tech</h3>
-          <div class="skill-list">ViGEmBus, SDL2 / Pygame, HID Protocol, DirectInput/XInput, Driver Emulation</div>
+          <h3>Software & Systems</h3>
+          <div class="skill-list">Object-Oriented Programming, Multithreading, Git/GitHub, JSON, Pygame, ViGEmBus</div>
         </div>
         <div class="skill-category">
-          <h3>Software Engineering</h3>
-          <div class="skill-list">Multithreading, Concurrency, Performance Benchmarking, Object-Oriented Design, Git/GitHub</div>
+          <h3>Controls & Automation</h3>
+          <div class="skill-list">PLC Programming, HMI Development, Ladder Logic, P&ID Interpretation, QA Testing</div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools</h3>
+          <div class="skill-list">VS Code, Vijeo Designer, Magelis HMI, GitHub</div>
         </div>
       </div>
     </section>
